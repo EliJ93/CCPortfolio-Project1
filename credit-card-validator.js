@@ -24,7 +24,25 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 //New code for the portfolio project
 let submitButton = document.getElementById('submit');
+submitButton.hidden = true;
 //let sum1;
+let cardValidateButton = document.getElementById("creditCardButton");
+
+cardValidateButton.onclick = function() {
+  let cardInput1 = document.getElementById("creditCardInput");
+  let cardValue1 = cardInput1.value;
+  let cardInputArray1 = [];
+  for(let i = 0; i <= cardValue1.length; i++) {
+    //cardInputArray.push(cardValue.charAt(i));
+    cardInputArray1[i] = cardValue1.charAt(i);
+    }
+    if(validateCred(cardInputArray1) === true) {
+      document.getElementById("valid-message").innerHTML = "This card is valid.";
+    }
+    else {
+      document.getElementById("valid-message").innerHTML = "This card is not valid.";
+    }
+}
 
 submitButton.onclick = function() {
     //document.body.innerHTML = "red";

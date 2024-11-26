@@ -9,3 +9,7 @@ nav {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.creditCardButton {
+    margin-top: 5px;
+}
