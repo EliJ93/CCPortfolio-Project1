@@ -31,6 +31,9 @@ submitButton.onclick = function() {
     let cardInput = document.getElementById("creditCardInput");
     let cardValue = cardInput.value;
     let cardInputArray = [];
+    if(cardInput === "") {
+        alert("Please enter a credit card number");
+    }
     for(let i = 0; i <= cardValue.length; i++) {
     //cardInputArray.push(cardValue.charAt(i));
     cardInputArray[i] = cardValue.charAt(i);
@@ -38,10 +41,12 @@ submitButton.onclick = function() {
     if(validateCred(cardInputArray) === true) {
        //document.body.innerHTML = cardInputArray;
         alert("The card is valid.");
+        //document.getElementById("valid-message").innerHTML = "The card is valid";
     }
     else {
        //document.body.innerHTML = cardInputArray;
         alert("The card is not valid.");
+        //document.getElementById("valid-message").innerHTML = "The card is not valid";
     }
     
 } 
@@ -89,7 +94,7 @@ const validateCred = (array) => {
    return false;
   }
 }
-console.log(validateCred(valid1));
+//console.log(validateCred(valid1));
 
 const findInvalidCards = (nestedArray) => {
   let invalidCardArray = [];
