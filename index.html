@@ -44,11 +44,15 @@
         </p>
         </div>
         <div class="projects" id="projects">
-            <h3>Here is one of my projects</h3>
+            <h3>Here are a few of my projects</h3>
             <h4>Credit Card Validator</h4>
             <p>The credit card validator will take in a credit card number 
                 and print out whether the card number is a valid credit card
                 number or not.
+                <p>HINT: Do not use a real credit card number for security reasons,
+                    instead look up fake credit card numbers that can be both
+                    valid or invalid to use the validator.
+                </p>
             </p>
             <form action="" method="#">
             <label for="creditCardInput">Credit Card:</label>
@@ -57,7 +61,10 @@
             <input type="submit" value="Submit" name="submit" id="submit">
             </form>
             <!--<p class="valid-message" id="valid-message">This will tell if the credit card is valid or not.</p>-->
-            
+            <h4>Random Message Generator</h4>
+            <p>Click the button below to generate a random message.</p>
+            <button class="randomButton" id="randomButton">Make A Random Message!</button>
+            <p class="randomMessage" id="randomMessage"></p>
         </div>
         <div class="skills" id="skills">
             <h3>My skills are the following: </h3>
@@ -70,5 +77,6 @@
             </ul>
         </div>
         <script src="credit-card-validator.js"></script>
+        <script src="random-message-generator.js"></script>
     </body>
 </html>

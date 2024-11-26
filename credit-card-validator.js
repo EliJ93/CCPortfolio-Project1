@@ -31,9 +31,6 @@ submitButton.onclick = function() {
     let cardInput = document.getElementById("creditCardInput");
     let cardValue = cardInput.value;
     let cardInputArray = [];
-    if(cardInput === "") {
-        alert("Please enter a credit card number");
-    }
     for(let i = 0; i <= cardValue.length; i++) {
     //cardInputArray.push(cardValue.charAt(i));
     cardInputArray[i] = cardValue.charAt(i);
