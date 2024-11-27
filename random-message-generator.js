@@ -23,6 +23,12 @@ const createRandomMessage = () => {
         if(randomNumber1 === randomNumber3) {
             createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the other ${animalsArray[randomNumber3]} is ${adjectiveArray[randomNumber4]}.`;
         }
+        else if(randomNumber2 === randomNumber4) {
+            createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the ${animalsArray[randomNumber3]} is also ${adjectiveArray[randomNumber4]}.`;
+        }
+        else if(randomNumber1 === randomNumber3 && randomNumber2 === randomNumber4) {
+            createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the other ${animalsArray[randomNumber3]} is also ${adjectiveArray[randomNumber4]}.`;
+        }
         else {
             createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the ${animalsArray[randomNumber3]} is ${adjectiveArray[randomNumber4]}.`;
         }
