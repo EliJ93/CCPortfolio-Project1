@@ -15,12 +15,17 @@ const createRandomMessage = () => {
         'jolly', 'bashful', 'lonely', 'brave', 'lax', 'relaxed',
         'calm', 'gentle', 'careful', 'naive', 'hasty', 'hardy',
         'quiet', 'mild', 'quirky', 'docile'];
-
+        let createSentence;
         let randomNumber1 = Math.floor(Math.random() * 24);
         let randomNumber2 = Math.floor(Math.random() * 26);
         let randomNumber3 = Math.floor(Math.random() * 24);
         let randomNumber4 = Math.floor(Math.random() * 26);
-        let createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the ${animalsArray[randomNumber3]} is ${adjectiveArray[randomNumber4]}.`;
+        if(randomNumber1 === randomNumber3) {
+            createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the other ${animalsArray[randomNumber3]} is ${adjectiveArray[randomNumber4]}.`;
+        }
+        else {
+            createSentence = `The ${animalsArray[randomNumber1]} is ${adjectiveArray[randomNumber2]}, while the ${animalsArray[randomNumber3]} is ${adjectiveArray[randomNumber4]}.`;
+        }
         return createSentence;
 }
 
