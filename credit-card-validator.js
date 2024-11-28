@@ -36,12 +36,17 @@ cardValidateButton.onclick = function() {
     //cardInputArray.push(cardValue.charAt(i));
     cardInputArray1[i] = cardValue1.charAt(i);
     }
+    if(!cardValue1) {
+      document.getElementById("valid-message").innerHTML = "Please enter a number.";
+    }
+    else {
     if(validateCred(cardInputArray1) === true) {
       document.getElementById("valid-message").innerHTML = "This card is valid.";
     }
     else {
       document.getElementById("valid-message").innerHTML = "This card is not valid.";
     }
+  }
 }
 
 submitButton.onclick = function() {
