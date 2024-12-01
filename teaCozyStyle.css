@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    font-family: Helvetica;
+}
+
+.logo-image {
+    height: 75px;
+    width: 150px;
+}
+
+.header {
+    position:fixed;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid seashell; 
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 30px;
+    color: gray;
+}
+
+.main {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*imv3un*_gcl_aw*R0NMLjE3MjYwNzkyMTUuQ2p3S0NBandfNFMzQmhBQUVpd0FfNjRZaHFDdEFUbHpoc096MEpNZlFKdG5oTUl3bmNsSGtfQU9sZXIxUThWc3dJYmI2MFNiSUFSR3NSb0M3RGNRQXZEX0J3RQ..*_gcl_au*NTYxNjQyMjgwLjE3MjYwNzkxNTE.*_ga*NTcyNjk5NzYxLjE3MjYwNzkxNTE.*_ga_3LRZM6TM9L*MTcyNzczODUxOC40My4xLjE3Mjc3NDQzNDUuNTcuMC4w");
+    height: 700px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.mission {
+    color: gray; 
+}
+
+.handpicked {
+    color: gray; 
+}
+
+.container1 {
+    background-color: black;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.totm {
+    color: gray;
+}
+
+.whats {
+    color: gray;
+}
+
+.totm-whats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    width: 300px;
+    height: 200px;
+}
+
+h3.title {
+    color: gray;
+    margin-left: 65px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic-and-title {
+    margin: 10px;
+}
+
+.main2 {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*12dgzx1*_gcl_aw*R0NMLjE3MjYwNzkyMTUuQ2p3S0NBandfNFMzQmhBQUVpd0FfNjRZaHFDdEFUbHpoc096MEpNZlFKdG5oTUl3bmNsSGtfQU9sZXIxUThWc3dJYmI2MFNiSUFSR3NSb0M3RGNRQXZEX0J3RQ..*_gcl_au*NTYxNjQyMjgwLjE3MjYwNzkxNTE.*_ga*NTcyNjk5NzYxLjE3MjYwNzkxNTE.*_ga_3LRZM6TM9L*MTcyNzk3NzUxOS40NC4xLjE3Mjc5Nzc1NzEuOC4wLjA.");
+    height: 800px;
+    width: 1200px;
+}
+
+h3.locations-title {
+    color: gray;
+}
+
+.addresses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address {
+    background-color: black;
+    color: gray;
+    margin: 20px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.locations-title {
+    font-size: 40px;
+    margin-left: 475px;
+    margin-top: 50px;
+}
+
+.footer {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lower-footer {
+    justify-content: flex-start;
+    color: gray;
+}
+
+
