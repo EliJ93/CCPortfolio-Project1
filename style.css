@@ -13,3 +13,15 @@ body {
 .creditCardButton {
     margin-top: 5px;
 }
+
+@media only screen and (max-width: 480px){
+    body {
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 480px){
+    .about-me {
+      width: 270px;
+    }
+  }

@@ -38,7 +38,7 @@ cardValidateButton.onclick = function() {
     }
     if(!cardValue1) {
       document.getElementById("valid-message").innerHTML = "Please enter a number.";
-    }
+    } 
     else {
     if(validateCred(cardInputArray1) === true) {
       document.getElementById("valid-message").innerHTML = "This card is valid.";
