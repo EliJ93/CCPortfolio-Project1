@@ -37,7 +37,10 @@ cardValidateButton.onclick = function() {
     cardInputArray1[i] = cardValue1.charAt(i);
     }
     if(!cardValue1) {
-      document.getElementById("valid-message").innerHTML = "Please enter a number.";
+      document.getElementById("valid-message").innerHTML = "Please enter a credit card number.";
+    }
+    else if(cardValue1.length < 14 || cardValue1.length > 16) {
+      document.getElementById("valid-message").innerHTML = "Please enter a credit card number between 14 and 16 digits.";
     } 
     else {
     if(validateCred(cardInputArray1) === true) {
